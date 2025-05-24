@@ -14,7 +14,7 @@ proposal = st.text_area("Proposal Content", height=400)
 if st.button("Run Compliance & Review Check"):
     with st.spinner("Analyzing..."):
         response = openai.ChatCompletion.create(
-            model="gpt-4",
+            model="gpt-4o-mini",
             messages=[
                 {"role": "system", "content": "You are a NASA compliance checker and reviewer. Confirm section presence and simulate feedback."},
                 {"role": "user", "content": proposal}
