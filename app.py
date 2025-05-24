@@ -5,7 +5,7 @@ st.set_page_config(page_title="Proposal Compliance Agent", layout="wide")
 
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 
-st.title("🛰️ NASA Proposal Compliance & Review Agent")
+st.title("Proposal Compliance & Review Agent")
 
 st.markdown("Paste your full proposal text below:")
 
